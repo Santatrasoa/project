@@ -3,7 +3,7 @@
 
 int main(int argc, char **argv)
 {
-	FILE* infoPc = fopen("PCprop.csv", "r+");
+	FILE* infoPc = fopen("pc_info.csv", "r+");
 	FILE* entre = fopen("PC.csv", "w+");
 
 	Pc* mit = (Pc*)malloc(sizeof(Pc)*50);
@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 	}
 
 
-	fprintf(entre, "Adiresy MAc,Famatarana,Marika");
+	fprintf(entre, "Famataran,Marika,Adiresy Mac\n");
 
 	mit = makainfopc(infoPc);
 
