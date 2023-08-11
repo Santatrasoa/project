@@ -1,0 +1,10 @@
+Bonjour!!
+Nous avons ici deux dossier qui contient deux codes pour les structures et les fichiers en C
+
+...Dans le struct_élève se trouve les codes qui permet de trier les rensegenement de plusieurs personnes (ici nous avons des élève)
+..Dans le fichier eleve.csv se trouve les info trier
+..Dans le fichier info_Etudiant.csv se trouve le liste des informations à trier(notez bien que si vous voulez modifier ou ajouter un information vous devez modifier le contenue de ce fichier)
+
+...Dans le structur_pc se trouve les codes pour trier les informations sur les pc
+..Le fichier PCprop.csv se trouve les info trier
+..Le fichier PC.csv se trouve le liste des informations à trier comme le fichier info_Etudiant.csv pour modifier les information du pc
