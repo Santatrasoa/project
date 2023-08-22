@@ -1,0 +1,35 @@
+*{
+    margin: 0px;
+    border: Opx;    
+}
+
+body{
+    height: 100vh;
+    background: linear-gradient(75deg, rgb(255, 0, 0), rgb(255, 255, 255), rgb(98, 0, 226));
+}
+
+.first{
+    margin-top: 5px;
+    margin-left: 300px;
+    font-family:ubuntu;
+    float: left;
+}
+
+.second{
+    padding-left: 510px;
+}
+
+.word{
+    color: rgb(251, 255, 0);
+    font-family: serif;
+}
+
+.bord{
+    float: left;
+}
+
+.images{
+    margin-left: 50px;
+    height: 250px;
+    width: 200px;
+}

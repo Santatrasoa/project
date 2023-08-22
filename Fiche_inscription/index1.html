@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiche d'inscription</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        ::placeholder {
+            font-style: italic;
+            color: #ffff00;
+        }
+
+        input{
+            background-color: #0e0e03;
+            color: white;
+        }
+
+        select{
+            background-color: #0e0e03;
+            color: white;
+        }
+    </style>
+</head>
+<body style="background-image: url(images.jpeg); background-size: cover;" class="word" >
+
+    <div>
+        <div class="bord">
+            <img src="Pictures/misa1.png" class="images">
+        </div>
+
+        <div>
+            <CENTER>
+                <h3 style="padding-top:20px;">
+                    FICHE D'INSCRIPTION L1 MIT
+                    <BR><font color="red">M</font>ention <font color="red">I</font>nformatique ET <font color="red">T</font>echnologie</BR>
+                </h3>
+            
+                <h4>
+                    site web <a href="http://misa-madagascar.com"><i><font color="red">http://misa-madagascar.com</a></font></i>
+                </h4>
+
+                <h4>
+                    Facebok <a href="https://www.facebook.com/misauniv"><font color="red"><i>MISA</i></font></a>
+                </h4>
+
+            </CENTER>
+        </div>
+        
+    </div>
+    <br><br><br><br><br><br><br><br><br><br>
+    <form action="fiche.html" method="post">
+        <div>
+            <div class="first">
+                Nom 
+            </div>
+            <div class="second">
+                : <input type="text" size="70" style="height: 2vw;" placeholder="Nom de famille" required>
+            </div>
+
+            <br>
+            <div class="first">
+                Prénoms
+            </div>
+
+            <div class="second">
+                : <input type="text" size="70" style="height: 2vw;" placeholder="Prénoms" required>
+            </div>
+
+            <br>
+            <div class="first">
+                Date de naissance 
+            </div>
+            <div class="second">
+                : <input type="text" size="70" style="height: 2vw;" placeholder="Entrer votre date de naissance" required>
+            </div>
+
+            <br>
+            <div class="first">
+                Lieu de naissance 
+            </div>
+            <div class="second">
+                : <input type="text" size="70" style="height: 2vw;" placeholder="Entrer votre Lieu de naissance" required>
+            </div>
+
+            <br>
+            <div class="first">
+                Genre 
+            </div>
+            <div class="second">
+                : <select name="genre" style="height: 2vw;">
+                    <option value="1">Femme</option>
+                    <option value="2">Homme</option>
+                </select>
+            </div>
+
+            <br>
+            <div class="first">
+                Numero d'inscription
+            </div>
+            <div class="second">
+                : <input type="text" size="70" style="height: 2vw;" placeholder="Entrer votre numero d'inscription du bacc" required>
+            </div>
+
+            <br>
+            <div class="first">
+                Année du bacc
+            </div>
+            <div class="second">
+                : <input type="text" size="70" style="height: 2vw;" placeholder="Entrer l'Année que vous avez obtenue le bacc" required>
+            </div>
+
+            <br>
+            <div class="first">
+                Série du bacc 
+            </div>
+            <div class="second">
+                : <select name="genre" style="height: 2vw;">
+                    <option value="1">série C</option>
+                    <option value="2">série S</option>
+                </select>
+            </div>
+
+            <br>
+            <div class="first">
+                Centre d'examen 
+            </div>
+            <div class="second">
+                : <input type="text" size="70" style="height: 2vw;" placeholder="Centre de bacc" required>
+            </div>
+
+            <br>
+            <div class="first">
+                Mention
+            </div>
+            <div class="second">
+                : <input type="text" size="70" style="height: 2vw;" placeholder="ex : passable" required>
+            </div>
+
+            <br>
+            <div class="first">
+                Adresse mail:
+            </div>
+            <div class="second">
+                : <input type="text" size="70" style="height: 2vw;" placeholder="entrer votre e-mail" required>
+            </div>
+
+            <br>
+            <div class="first">
+                Numero de téléphone:
+            </div>
+            <div class="second">
+                : <input type="text" size="70" style="height: 2vw;" placeholder="entrer votre numero de téléphone" required>
+            </div>
+            <br>
+            <div class="first" style="width: 90; margin-bottom: 100px; size:20px; display: flex;justify-content: center;align-items: center;" >   
+                <input type="submit" value="S'inscrire">
+            </div>
+        </div>    
+        
+    </form>
+
+</body>
+</html>
