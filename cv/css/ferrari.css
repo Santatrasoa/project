@@ -1,0 +1,77 @@
+*{
+    margin: 0px;
+    border: 0px;
+}
+
+body{
+    background-image: url(../Pictures/ferrari/EJZvceJL.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vw;
+}
+
+.principal .accueil a{
+    color: yellow;
+    font-family: monospace;
+    font-size: 25px;
+    text-decoration:none;
+}
+
+.principal .mycar a{
+    font-family: cursive;
+    font-style: italic;
+    color: yellow;
+    text-decoration:none;
+}
+
+
+.principal{
+    position: fixed;
+    height: 60px;
+    width: 1500px;
+    background: rgba(255, 17, 0, 0.507);
+}
+
+.accueil{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-left: 400px;
+    height:100px;
+    width: 100px;
+    color: yellow;
+    float: left;
+}
+
+.performance{
+    margin-top: 20px;
+    margin-left: 700px;
+    color: yellow;
+}
+
+.box{
+    font-family: monospace;
+    color: white;
+    margin-left: 50px;
+    margin-right: 10px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    float: left;
+}
+
+.mycar{
+    font-family: cursive;
+    margin-left: 250px;
+    position: fixed;
+    top: 15px;
+    left: 0px;
+    color: rgb(251, 255, 2);
+    float: left;
+}
+
+.main{
+    position: relative;
+    top:100px;
+}

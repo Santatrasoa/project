@@ -1,0 +1,44 @@
+*{
+    margin:0px;
+    border: 0px;
+}
+
+.image{
+    border-radius: 45px;
+    height: 15px;
+    width: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    float: left;
+}
+
+.profil{
+    margin-top: 20px;
+    border-radius: 50% 50% 50% 50%;
+}
+
+.box1{
+    height:1000px;
+    width: 415px;
+    background-color: rgb(77, 79, 82);
+    float: left;
+}
+
+.box2{
+
+    height: 1000px;
+    width:1290px;
+    background-color: rgb(137, 151, 235);
+}
+
+.bord{
+    padding-left: 10px;
+    padding-top: 30px;
+}
+
+.h{
+    margin-left: 450px;
+    height: 30px;
+    width: 1000px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,196 @@
+*{
+    margin:0px;
+    border: 0px;
+}
+
+body{
+    background-image: url(../Pictures/Mercedes/logo/f.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vw;
+}
+
+.box{
+    font-family: monospace;
+    color: white;
+    margin-left: 150px;
+    margin-right: 10px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    float: left;
+}
+
+.mycar a{
+    color:yellow;
+    text-decoration: none;
+}
+
+.mycar{
+    font-family: cursive;
+    margin-left: 250px;
+    position: fixed;
+    top: 10px;
+    left: 0px;
+    color: rgb(251, 255, 2);
+    float: left;
+}
+
+
+.accueil{
+    font-family: cursive;
+    margin-left: 250px;
+    position: fixed;
+    top: 15px;
+    left: 500px;
+    color: rgb(236, 17, 17);
+}
+
+.image{
+    margin-left: 60PX;
+    margin-top: 100px;
+    background-position: center;
+    background-size: cover;
+    width: 170px;
+    height: 200px;
+    color: rgb(77, 0, 0);
+}
+
+.image h3{
+    display: none;
+}
+
+.image:hover h3{
+    background-color: rgba(255, 255, 255, 0.001);
+    font-family: cursive;
+    border-radius: 70px;
+    color: rgb(255, 0, 0);
+    display: block;
+}
+
+.image1{
+    background-image: url(../Pictures/Mercedes/logo/Mercedes.png);
+}
+
+.image2{
+    background-image: url(../Pictures/logo/ferrari.png);
+}
+
+.image3{
+    background-image: url(../Pictures/logo/lamborghini.png);
+}
+
+.image4{
+    background-image: url(../Pictures/logo/Porsche.png);
+}
+
+.image5{
+    background-image: url(../Pictures/logo/dodge1-.png);
+}
+
+.image1:hover{
+    animation: mi .1s linear 1;
+    transform: scale(1.3);
+}
+
+.image2:hover{
+    animation: mi .1s linear 1;
+    transform: scale(1.3);
+}
+
+.image3:hover{
+    animation: mi .1s linear 1;
+    transform: scale(1.3);
+}
+
+
+.image4:hover{
+    animation: mi .1s linear 1;
+    transform: scale(1.3);
+}
+
+.image5:hover{
+    animation: mi .1s linear 1;
+    transform: scale(1.3);
+}
+
+.voiture {
+    margin-top: 200px;
+    margin-right: 210px;
+    font-size: 2rem;
+    padding: 20px;
+    background: linear-gradient(140deg, rgba(46, 37, 37, 0.8), rgba(255, 251, 2, 0.964));
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 500px;
+    border-radius: 70px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 15s forwards, bounce 2s infinite 1s;
+}
+
+.caracteristique{
+    margin-top: 1000px;
+    font-size: 2rem;
+    padding: 20px;
+    background: linear-gradient(56deg, rgb(221, 187, 187), rgba(217, 255, 4, 0.964));
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 400px;
+    border-radius: 70px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: appear 15s forwards, bounce 2s infinite 1s;
+}
+
+
+@keyframes appear {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+@keyframes bounce {
+    0%, 100% {
+      transform: translate(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+}
+  
+
+@keyframes mi{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.3);
+    }
+}
+
+.anim{
+    background-image: url(../Pictures/logo/Mercedes.png);
+    width: 5vw;
+    height: 5vw;
+    animation: mihodina 5s ease-out infinite;
+}
+
+@keyframes mihodina{
+    from{
+        transform: rotateZ(180deg);
+    }
+    to{
+        transform: rotateZ(180deg);
+    }
+}
+/*
+.voiture{
+    margin-top: 300px;
+    color: white;
+    position: absolute;
+    left: 500px;
+}
+*/
