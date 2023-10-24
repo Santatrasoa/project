@@ -1,0 +1,175 @@
+*{
+	border:0px;
+	margin:0px;
+}
+
+body{
+	background-color:#6C3428;
+	font-family: 'Roboto', sans-serif;
+	justify-content: center;
+	text-align: center;
+}
+
+header{
+	margin-top: 4vw;
+}
+
+
+li{
+	display:flex;
+	margin-left:10px;
+}
+
+ul{
+	display:flex;
+}
+
+table{
+	margin: auto;
+	margin-top:10vw;
+	background-color:#BA704F;
+	border-radius: 10px;
+}
+
+h1{
+	text-align: center;
+	padding-top: 15px;
+}
+
+form{
+	width: 300px;
+	margin-left: 20px;
+}
+
+form label{
+	display: flex;
+	margin-top: 20px;
+	font-size: 16px;
+}
+
+form input{
+	width: 100%;
+	padding: 7px;
+	border: none;
+	border: 1px solid gray;
+	border-radius: 10px;
+}
+
+input[type='submit']{
+	width: 320px;
+	height: 35px;
+	margin-top:20px;
+	border: none;
+	background-color: #CEE6F3;
+	color: rgb(20, 18, 18);
+	font-size: 18px;
+}
+
+input[type='text']{
+	font-size:18px;
+}
+
+input[type='password']{
+	font-size:18px;
+}
+
+p{
+	text-align: center;
+	padding-top: 20px;
+	font-size: 15px;
+}
+
+.box{
+	width:360px;
+	height: 420px;
+	margin: auto;
+	margin-top:10vw;
+	/*background-color: #DFA878;*/
+	background-color:#BA704F;
+	border-radius: 10px;
+	/*box-shadow: 4px 5px #CEE6F3;*/
+	box-shadow: 4px 5px #DFA878;
+}
+
+.paragraph{
+	text-align: center;
+	color: white;
+	font-size: 16px;
+	margin-top: -10px;
+}
+
+.paragraph a{
+	margin-top:16px;
+	color: #CEE6F3;
+}
+
+.login{
+	width:360px;
+	height: 360px;
+	margin: auto;
+	margin-top: 10vw;
+	background-color: #BA704F;
+	border-radius: 10px;
+	box-shadow: 4px 5px #DFA878;
+}
+
+.search{
+	width: 420px;
+	height: 150px;
+	padding-top:15px;
+	background-color: #BA704F;
+	border-radius: 10px;
+	margin: auto;
+	margin-top: 1vw;
+	display: flex;
+}
+
+.input{
+	margin-top: 2vw;
+	margin-left: 2vw;
+	text-align:center;
+}
+
+.research{
+	text-decoration: none;
+	color: black;
+}
+
+.box_search{
+	height:50px;
+	width:200px;
+	margin: auto;
+	margin-top: 2vw;
+	padding-bottom:15px;
+	border-radius: 10px;
+	background-color:#CEE6F3;
+}
+
+.opened{
+	background-color: rgba(81, 255, 0, 0.438);
+	border-radius:10px;
+	font-family: 'times New Romans', avec-serif;
+	font-family: ubuntu;
+	font-size: 20px;
+}
+
+.closed{
+	background-color: rgb(255, 121, 204);
+	border-radius:10px;
+	font-family: 'times New Romans', sans-serif;
+	font-size:20px;
+}
+
+.deconnexion{
+	text-decoration: none;
+	text-align: center;
+	color: black;
+}
+
+.dec{
+	margin: auto;
+	width: 200px;
+	height: 30px;
+	background-color:#CEE6F3;
+	border-radius: 10px;
+}
