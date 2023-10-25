@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <math.h>
 
-#include "utilMaths.h"
+#include "utilMaths.h" 
 
-int main() {
+int main(){
 	char * intervall = getenv("QUERY_STRING");
 
 	double a = 0, b = 0;
@@ -19,7 +19,7 @@ int main() {
 	printf("<body>");
 		printf("<table>\n");
 		//~ printf("<th></th>");
-		printf("<form action='http://www.solution.mit/Trapèze.cgi' method='get'>\n"
+		printf("<form action='http://www.solution.mit/dichotomie_fonction.cgi' method='get'>\n"
 			"<tr>"
 			"<td>"
 			"<label for='first'>First intervals</label>\n"
@@ -35,7 +35,7 @@ int main() {
 			"</table>\n"
 			"<input type='submit' value='Find Solution'>\n"
 		"</form>\n<br>");
-		printf("<h4>La surface du fonction log(x) - 1 == %lg</h4>", trapeze(a, b));
+		printf("<h4>La surface du fonction log(x) - 1 == %lg</h4>", sol(a, b));
 		
 	printf("</body>\n");
 

@@ -2,34 +2,43 @@
 #include <stdlib.h>
 #include <math.h>
 
-double f(double x);							/*	La fonction f(x)	*/
-double g(double x);							/*	Ici g(x) est la fonction dérivé de f(x)	*/
-double tangente(double a, double);		/*	le méthode de Newton (tangete) pour trouver la solution unique de f(x) = 0	*/
+#include "utilMaths.h" 
 
-int main() {
-	double a = 1, b=4;
-	printf("%lg\n", tangente(a, b));
-	
+int main(){
+	char * intervall = getenv("QUERY_STRING");
+
+	double a = 0, b = 0;
+	 
+	sscanf(intervall, "%*[^=]=%lg", &a);
+	sscanf(intervall, "%*[^&]&second=%lg", &b);
+
+
+	printf("content-type: text/html\n\n");
+	head();
+
+	printf("<body>");
+		printf("<table>\n");
+		//~ printf("<th></th>");
+		printf("<form action='http://www.solution.mit/Method_tangente.cgi' method='get'>\n"
+			"<tr>"
+			"<td>"
+			"<label for='first'>First intervals</label>\n"
+			"</td><td>"
+			"<input type='number' name='first'>\n"
+			"</td></tr>"
+			
+			"<tr><td>"
+			"<label for='second'>Second intervals</label>\n"
+			"</td><td>"
+			"<input type='number' name='second'>\n"
+			"</td></tr>"
+			"</table>\n"
+			"<input type='submit' value='Find Solution'>\n"
+		"</form>\n<br>");
+		printf("<h4>Les solutions du fonction log(x) - 1 == %lg</h4>", tangente(a, b));
+		
+	printf("</body>\n");
+
+	printf("</html>\n</body>\n");
 	return 0;
-}
-
-double f(double x){
-	return log(x)-1;
-}
-
-double g(double x){
-	return 1/(x);
-}
-
-double tangente(double x0, double b){
-	double solution=0.0, eps = 0.0000001;
-	while (fabs(f(x0)-f(b)) > eps){
-		solution = x0 - f(x0)/g(x0);
-		x0 = solution;
-		
-		if (f(x0) == 0.0)	return solution;
-		
-	}
-	
-	return solution;
 }

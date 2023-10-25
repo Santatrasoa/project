@@ -1,44 +1,44 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
-typedef struct {
-	double coef_dir;
-	double constante;
-}Coeff;
+#include "utilMaths.h" 
 
-double f(double x){
-	return exp(x) -1;
-}
+int main(){
+	char * intervall = getenv("QUERY_STRING");
 
-Coeff coefficient(double a, double b) {
-    Coeff cf;
+	double a = 0, b = 0;
+	 
+	sscanf(intervall, "%*[^=]=%lg", &a);
+	sscanf(intervall, "%*[^&]&second=%lg", &b);
 
-    cf.coef_dir = (f(b) - f(a)) / (b - a);
-    cf.constante = -cf.coef_dir * a + f(a);
 
-    return cf;
-}
+	printf("content-type: text/html\n\n");
+	head();
 
-double secante(double a, double b) {
-	double solution = 0.0;
-	
-	while(1) {
-		Coeff cf = coefficient(a, b);
-		solution = - cf.constante / cf.coef_dir;
+	printf("<body>");
+		printf("<table>\n");
+		//~ printf("<th></th>");
+		printf("<form action='http://www.solution.mit/Method_Descarte.cgi' method='get'>\n"
+			"<tr>"
+			"<td>"
+			"<label for='first'>First intervals</label>\n"
+			"</td><td>"
+			"<input type='number' name='first'>\n"
+			"</td></tr>"
+			
+			"<tr><td>"
+			"<label for='second'>Second intervals</label>\n"
+			"</td><td>"
+			"<input type='number' name='second'>\n"
+			"</td></tr>"
+			"</table>\n"
+			"<input type='submit' value='Find Solution'>\n"
+		"</form>\n<br>");
+		printf("<h4>La surface du fonction log(x) - 1 == %lg</h4>", tangente(a, b));
 		
-		if (f(solution) == 0){
-			return solution;
-		}
-		b = solution;
-	}
-	
-	return solution;
-}
+	printf("</body>\n");
 
-int main() {
-	double a = 1, b = 5;
-	
-	printf("%lg", secante(a,b));
-
+	printf("</html>\n</body>\n");
 	return 0;
 }
