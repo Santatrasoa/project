@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden; /* Empêche la barre de défilement horizontale */
+}
+
+.welcome-menu {
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Empêche le défilement vertical pendant l'animation */
+}
+
+.welcome-content {
+    background: rgb(240, 234, 234);
+    text-align: center;
+    color: #3498db;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: -20px -20px 30px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-out;
+    transition: transform 0.5s ease-in-out; /* Ajout d'une transition pour le lien */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.welcome-content h1 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #2c3e50; /* Couleur de texte plus foncée */
+}
+
+.welcome-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #555; /* Couleur de texte plus foncée */
+}
+
+.welcome-content a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 8px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out; /* Ajout de transitions */
+}
+
+.welcome-content a:hover {
+    background-color: #295582;
+    color: #fff;
+    transform: scale(1.1); /* Léger agrandissement au survol */
+}

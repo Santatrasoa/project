@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='css/adminlte.min.css'>
+    <link rel='stylesheet' href='css/all.min.css'>
+    <link rel='stylesheet' href='css/acceuil.css'>
+    <title>Gestion de Site</title>
+</head>
+
+<body>
+    
+    <section>
+        <h1 ><a href='http://www.gestion.mit' class='home'><img src='img/home.png' class='img'>home</a></h1>
+    </section>
+
+	<section class='content'>
+		<div class='container-fluid'>
+			<h2 class='text-center display-4'>Search</h2>
+			<div class='row'>
+				<div class='col-md-8 offset-md-2'>
+					<form action='http://www.gestion.mit/listAccess.cgi'>
+						<div class='input-group'>
+							<input type='text' class='form-control form-control-lg' name='name' required placeholder='Type the site You want to see'>
+							<input type='hidden' name='page' value='1'>
+							<div class='input-group-append'>
+								<button type='submit' class='btn btn-lg btn-default'>
+									<i><img src='img/search_black.png' class='img'></i>
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>

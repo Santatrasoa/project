@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+
+:root{
+    --dark-purple:#007bff;
+    --light-purple:#044d9b;
+    --dark-orange:#007bff;
+    --light-orange: #044d9b;
+    --dark-pink: #007bff;
+    --light-pink:#044d9b;
+
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vh;
+    max-width: 500vh;
+    flex-wrap: wrap;
+}
+
+section{
+    min-height: 600px;
+    padding: 1.5rem;
+    display: flex;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-top: 10vh;
+    margin-right: auto;
+}
+
+.price_card{
+    position: relative;
+    width: 300px;
+    height: 230px;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    box-shadow: 0 5px 10px var(--light-orange);
+    transition: height 0.3s ease;
+    flex-wrap: wrap;
+    
+}
+
+.price_card:hover{
+    height: 550px;
+}
+
+.price_card .header{
+    position: absolute;
+    top: 0;
+    width: 110%;
+    height: 230px;
+    color: #fff;
+    /* background-color: red; */
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0 5px 10px rgba(0,0,0,0.2));
+    z-index: 1;
+}
+
+.price_card .header::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        var(--dark-orange),
+        var(--light-orange)
+    );
+    border-radius: 20px;
+    clip-path: polygon(0% 0%,100% 0%,100% 90%,50% 100%,0% 90%);
+}
+
+.price_card .header .info{
+    position: relative;
+    text-align: center;
+}
+
+.price_card .header .info h1{
+    margin-bottom: 0.6rem;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+.price_card .header .info p{
+    font-size: 0.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.price_card .header .price{
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    color: var(--dark-orange);
+    font-size: 2.5rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+.price_card .desc{
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.price_card .desc li{
+    list-style: none;
+    color: #050505;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+.price_card button{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50% , 50%);
+    border: none;
+    outline: none;
+    background: linear-gradient(
+        to right,
+        var(--dark-orange),
+        var(--light-orange)
+    );
+    padding: 1rem 3rem;
+    border-radius: 30px;
+    white-space: nowrap;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.733);
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 -5px 10px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.price_card button:active{
+    scale: 0.95;
+}
+
+
+/* couleur des boites */
+.price_card.card2{
+    box-shadow:0 5px 10px var(--dark-purple);
+}
+
+.price_card.card2 .header::before,.price_card.card2 button{
+    background: linear-gradient(
+        to right,
+        var(--dark-purple),
+        var(--light-purple) 
+    );
+}
+
+.price_card.card2 .header .price{
+    color: var(--dark-purple);
+}
+
+
+.price_card.card3{
+    box-shadow:0 5px 10px var(--dark-pink);
+}
+
+.price_card.card3 .header::before,.price_card.card3 button{
+    background: linear-gradient(
+        to right,
+        var(--dark-pink),
+        var(--light-pink) 
+    );
+}
+
+.price_card.card3 .header .price{
+    color: var(--dark-pink);
+}
+
+.a{
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+}
+
+.logOut{
+    display: flex;
+    margin-left: 80%;
+}
